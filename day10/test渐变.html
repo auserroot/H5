@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+            border: 1px solid #000;
+            /* 线性渐变 */
+            /* background:-webkit-gradient(linear,0 0,0 100%,from(green),to(blue)); 老式写法*/
+            /* background: -webkit-linear-gradient(top, green 50%, blue 100%); 新式写法*/
+            /* 径向渐变 */
+            /* background: -webkit-radial-gradient(50% 50%, red,yellow, white ); */
+            /* 重复径向渐变 */
+            /* background: -webkit-repeating-radial-gradient(circle, red 5%,yellow 10%,white 20%); */
+            /* background: -webkit-repeating-radial-gradient(circle contain, red 5%,yellow 10%,white 20%); */
+            /* 重复线性渐变 */
+            background: -webkit-repeating-linear-gradient(left, red 10%,yellow 20%,white 30% );
+            /* background: -webkit-repeating-linear-gradient(45deg,red 10%,yellow 15%,white 20%); */
+            /* background: -webkit-repeating-linear-gradient(left,red 10%,orange 20%,yellow 30%,cyan 40%,#41FD28 50%,#2887FD 60%,purple 70%,pink 80%,#FD28E7 90%,red 100%); */
+        }
+
+        /* 
+        -webkit-  谷歌浏览器
+        -MOZ- 火狐浏览器
+        -ms- iE浏览器
+        -o- 欧朋浏览器 
+       */
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

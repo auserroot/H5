@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转相册</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body,html{
+            height: 100%;
+            background: url(../day11/img/bj3.jpg) no-repeat center;
+            background-size: 100% 100%;
+        }
+        ul{
+            width:280px;
+            height: 400px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+            animation: pic_active 20s infinite;
+        }
+        ul li{
+            list-style: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul li img{
+            width: 280px;
+            height: 400px;
+        }
+        .pic1{
+            transform: translateZ(650px);
+        }
+        .pic2{
+            transform:rotateY(36deg) translateZ(650px);
+        }
+        .pic3{
+            transform:rotateY(72deg) translateZ(650px);
+        }
+        .pic4{
+            transform:rotateY(108deg) translateZ(650px);
+        }
+        .pic5{
+            transform:rotateY(144deg) translateZ(650px);
+        }
+        .pic6{
+            transform:rotateY(180deg) translateZ(650px);
+        }
+        .pic7{
+            transform:rotateY(216deg) translateZ(650px);
+        }
+        .pic8{
+            transform:rotateY(252deg) translateZ(650px);
+        }
+        .pic9{
+            transform:rotateY(288deg) translateZ(650px);
+        }
+        .pic10{
+            transform:rotateY(324deg) translateZ(650px);
+        }
+
+
+       .pic_gif{
+           position: absolute;
+           right: 0;
+           bottom: 0;
+       }
+
+
+    
+        @keyframes pic_active{
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            0%{
+                transform: rotateX(15deg) rotateY(90deg);
+            }
+            0%{
+                transform: rotateX(0deg) rotateY(180deg);
+            }
+            75%{
+                transform: rotateX(-15deg) rotateY(270deg);
+            }
+           100%{
+                transform: rotateX(0deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+       <li class="pic1"><img src="img/pic1.png" alt=""></li>
+       <li class="pic2"><img src="img/pic2.png" alt=""></li>
+       <li class="pic3"><img src="img/pic3.png" alt=""></li>
+       <li class="pic4"><img src="img/pic4.png" alt=""></li>
+       <li class="pic5"><img src="img/pic5.png" alt=""></li>
+       <li class="pic6"><img src="img/pic6.png" alt=""></li>
+       <li class="pic7"><img src="img/pic7.png" alt=""></li>
+       <li class="pic8"><img src="img/pic8.png" alt=""></li>
+       <li class="pic9"><img src="img/pic9.png" alt=""></li>
+       <li class="pic10"><img src="img/pic10.png" alt=""></li>
+    </ul>
+    <img src="img/a.gif" class="pic_gif" alt="">
+    <audio src="img/aaaaa.mp3" autoplay></audio>
+</body>
+</html>

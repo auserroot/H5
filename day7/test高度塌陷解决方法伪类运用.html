@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .warp{
+            width: 500px;
+            border: 1px solid red;
+            /* overflow: hidden; */
+            /* height: 100px; */
+        }
+        /* 1.给父元素加overflow: hidden; */
+        /* 2.给父元素高度 */
+        /* 3.利用clear属性 */
+        /* 4.用伪类 after加clear属性 (万能浮动消除法）*/
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(80, 12, 189);
+            float:left;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(172, 212, 25);
+            float: left;
+        }
+        /* .clear{
+            height: 0;
+            clear: both;
+        } */
+        .clearflx{
+            *zoom: 1;/*对IE7以下浏览器进行处理*/
+        }
+        .clearflx::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+   <div class="warp clearflx">
+       <div class="box1"></div>
+       <div class="box2"></div>
+       <div class="box3"></div>
+       <!-- <div class="clear"></div> -->
+   </div> 
+</body>
+</html>

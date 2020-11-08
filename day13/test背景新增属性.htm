@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat;
+            background-clip: border-box;/*背景被裁剪到边框盒*/
+            /*background-clip: padding-box;/* 背景被裁剪到内边距框*/
+            /*background-clip: content-box;/*背景被裁剪到内容框*/
+        }
+        div:nth-child(2){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat center;
+            /*background-clip: border-box;/*背景被裁剪到边框盒*/
+            background-clip: padding-box;/* 背景被裁剪到内边距框*/
+            /*background-clip: content-box;/*背景被裁剪到内容框*/
+        }
+        div:nth-child(3){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat center;
+           /* background-clip: border-box;/*背景被裁剪到边框盒*/
+           /* background-clip: padding-box;/* 背景被裁剪到内边距框*/
+            background-clip: content-box;/*背景被裁剪到内容框*/
+        }
+        div:nth-child(4){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat;
+            /* 设置背景原点 */
+            background-origin: border-box;/*背景图像边界框的相对位置*/
+        }
+        div:nth-child(5){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat;
+            /* 设置背景原点 */
+            background-origin: padding-box;/*背景图像填充框的相对位置*/
+        }
+        div:nth-child(6){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat;
+            /* 设置背景原点 */
+            background-origin: content-box;/*背景图像填充框的相对位置*/
+        }
+        div:nth-child(7){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            background: url(img/sky.png) no-repeat;
+           background-size: 100% 100%;/*规定背景图的大小。第一个值宽度，第二个值高度*/
+          /* background-size: cover;
+           /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域*/
+           /*background-size: contain;
+           /*把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域*/
+        }
+        div:nth-child(8){
+            width: 94px;
+            height: 74px;
+            margin: 10px 0;
+            border: 2px dashed #000;
+            /* 多背景 */
+            background: url(img/2.png) repeat-x left bottom ,url(img/sky.png) no-repeat;
+            }
+            div:nth-child(9){
+            width: 94px;
+            height: 84px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #000;
+            display: -webkit-box;/*弹性盒旧版*/
+            -webkit-line-clamp: 4;/*设置隐藏起始位置*/
+            -webkit-box-orient: vertical;/*设置隐藏方向（垂直）*/
+            overflow: hidden;
+            /* background: url(img/2.png) repeat-x left bottom ,url(img/sky.png) no-repeat; */
+            }
+            div:nth-child(10):hover{
+                width: 80px;
+                height: 80px;
+                background-color: springgreen;
+                transform:rotateY(180deg);
+	           -webkit-transform:rotateY(180deg); /* Chrome and Safari */
+	           -moz-transform:rotateY(180deg);
+                backface-visibility:hidden;
+                -webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+               -moz-backface-visibility:hidden; 	/* Firefox */
+               -ms-backface-visibility:hidden;
+            }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+        111111111111111111111111
+        1111111111111111111111111
+        11111111111111111111111
+        1111111111111111111111111
+        111111111111111111111111
+        11111111111111111111111
+        111111111111111111111
+        11111111111111111111111
+    </div>
+    <div>666</div>
+</body>
+</html>

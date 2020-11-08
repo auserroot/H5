@@ -1,0 +1,129 @@
+/* css reset  css重置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 设置全局默认字号和字体 */
+body,html{
+    font: 14px "微软雅黑",Arial;
+}
+/* 取消默认加粗样式 */
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+    font-size: 100%;
+}
+/* 取消默认倾斜样式 */
+i,em{
+    font-style: normal;
+}
+/* 取消默认下划线 */
+a{
+    color: #444444;
+    text-decoration: none;
+}
+/* 取消列表项目符号 */
+li{
+    list-style: none;
+}
+/* 取消input选中后的高亮框 */
+input{
+    outline: none;
+}
+/* 帮助解决图片被嵌套后的3~6像素bug */
+img{
+    vertical-align: middle;
+}
+/* 万能清除浮动法 */
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+/* 网页开始 */
+.container{
+    margin: 0 auto;
+    width: 1082px;
+}
+#header{
+    height: 82px;
+    background: #eeeeee;
+    min-width: 1082px;
+}
+#banner{
+    height: 469px;
+    position: relative;
+}
+#banner ul{
+    height: 469px;
+    overflow: hidden;
+    text-align: center;
+}
+#banner ul img{
+    width: 100%;
+    height: 469px;
+}
+#banner ol{
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    margin-left: -46px;
+}
+#banner ol li{
+    float: left;
+    margin-right: 11px;
+}
+#banner ol li a{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#banner ol li a:hover{
+    background: #fff;
+}
+/* 主题内容 */
+.services{
+    height: 348px;
+    padding-top: 60px;
+}
+.services h2{
+    line-height: 24px;
+    font-size: 20px;
+    background: url(../images/bwsm_07.png) no-repeat center;
+    text-align: center;
+}
+.services p{
+    text-align: center;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+.services ul{
+    margin-top: 26px;
+}
+.services ul li{
+    float: left;
+}
+.services ul li a{
+    display: block;
+    width: 270.5px;
+    text-align: center;
+    height: 100%;
+}
+.services ul li a strong{
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #434343;
+    font-weight: bold;
+    line-height: 48px;
+    margin-top: 17px;
+}
+.services ul li a span{
+    line-height: 22px;
+    color: #6d6d6d;
+}

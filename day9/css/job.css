@@ -1,0 +1,137 @@
+/* 子页面-招聘css样式 */
+.c_left{
+    width: 223px;
+    border: 1px solid #dcdcdc;
+    min-height: 117px;
+    background: #fff;
+    float: left;
+    padding: 4px 26px 0 14px;
+}
+.mt15{
+    margin-top: 15px;
+}
+.c_left dl dt{
+    color: #53cac3;
+    font-size: 18px;
+    line-height: 36px;
+}
+.c_left dl dd{
+    line-height: 34px;
+}
+.c_left dl dd a{
+    margin-right: 25px;
+    color: #999;
+}
+.c_right{
+    width: 891px;
+    float: right;
+    min-height: 207px;
+}
+.c_right form{
+    width: 889px;
+    height: 56px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+.txt{
+    width: 775px;
+    height: 56px;
+    border: 0;
+    color: #d6d6d6;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 17px;
+}
+.sub{
+    width: 104px;
+    height: 45px;
+    background: #5ecfc9;
+    border: 0;
+    vertical-align: top;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;/*  改变鼠标指针为手型 */
+}
+.c_right ul{
+    margin-top: 20px;
+}
+.c_right ul li{
+    width: 861px;
+    height: 104px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    margin-top: 15px;
+    padding: 23px 14px 0 14px;
+    overflow: hidden;
+    position: relative;
+}
+.c_right ul li a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.c_right ul li .li_left{
+    float: left;
+    height: 104px;
+}
+.li_left .topspan{
+    color: #000;
+    font-size: 18px;
+    display: block;
+    line-height: 22px;
+}
+.li_left strong{
+    color: #e85253;
+    line-height: 48px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.li_left p{
+    line-height: 34px;
+    color: #656565;
+}
+.li_left p span,.li_right .p2 span{
+    display: inline-block;
+    width: 2px;
+    height: 17px;
+    background: #ececf2;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.c_right ul li .li_right{
+    float: right;
+    height: 104px;
+    text-align: right;
+}
+.li_right .head{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.li_right .head img{
+    width: 100%;
+    height: 100%;
+}
+.li_right .p1{
+    line-height: 20px;
+    color: #a7a7a7;
+}
+.li_right .p2{
+    line-height: 34px;
+    color: #a7a7a7;
+}
+.li_right .p2 i{
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    background: #6bd52c;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    margin-left: 11px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverbox Image Gallery</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            vertical-align: middle;
+        }
+        div{
+            width: 620px;
+            margin: 0 auto;
+        }
+        div h2{
+            width: 620px;
+            /* font: normal 16px/30px #993333; */
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #993333;
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        div ul{
+            padding: 3px;
+        }
+        div ul li{ 
+            padding: 5px;
+            margin: 2px;
+            background-color:#EEEEEE ;
+            border: 1px solid #ddd;
+            border: #ddd #bbb  #aaa #ccc;
+            float: left;
+            position: relative;
+        }
+        div ul li a .img1{
+            width: 100px;
+            height: 75px;
+            padding: 2px;
+            border: 1px solid #aaa;
+            border:  #aaa #ccc #ddd #bbb ;
+        }
+        div ul li a .img2{
+            display: none;
+            padding: 2px;
+            border: 1px solid #000;
+            background-color: #fff;
+            position: absolute;
+            top: -32px;
+            left: -45px;
+            /* opacity: 0.5; */
+        }
+        div ul li:hover a .img2{
+            display: block;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Hoverbox Image Gallery</h2>
+        <ul>
+            <li><a href="#"><img src="img/photo01.jpg" alt="" class="img1"><img src="img/photo01.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo02.jpg" alt="" class="img1"><img src="img/photo02.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo03.jpg" alt="" class="img1"><img src="img/photo03.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo04.jpg" alt="" class="img1"><img src="img/photo04.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo05.jpg" alt="" class="img1"><img src="img/photo05.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo06.jpg" alt="" class="img1"><img src="img/photo06.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo07.jpg" alt="" class="img1"><img src="img/photo07.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo08.jpg" alt="" class="img1"><img src="img/photo08.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo09.jpg" alt="" class="img1"><img src="img/photo09.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo10.jpg" alt="" class="img1"><img src="img/photo10.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo11.jpg" alt="" class="img1"><img src="img/photo11.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo12.jpg" alt="" class="img1"><img src="img/photo12.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo13.jpg" alt="" class="img1"><img src="img/photo13.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo14.jpg" alt="" class="img1"><img src="img/photo14.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo15.jpg" alt="" class="img1"><img src="img/photo15.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo16.jpg" alt="" class="img1"><img src="img/photo16.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo17.jpg" alt="" class="img1"><img src="img/photo17.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo18.jpg" alt="" class="img1"><img src="img/photo18.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo19.jpg" alt="" class="img1"><img src="img/photo19.jpg" alt="" class="img2"></a></li>
+            <li><a href="#"><img src="img/photo20.jpg" alt="" class="img1"><img src="img/photo20.jpg" alt="" class="img2"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /*ol li:first-child{
+            font-size: 30px;
+        } 
+        ol li:nth-child(3){
+            font-size: 30px;
+            color: red;
+        }
+         ol li:last-child{
+            font-size: 30px;
+        }
+        */
+        /*ol li:nth-child(even){
+            font-size: 30px;
+            background: orange;
+        }
+        li:nth-child(3) 可以直接选取索引值 
+          li:nth-child(3n) 设置倍数
+          li:nth-child(3n+1) 设置组且选择其中某个
+          li:nth-child(odd)
+          li:nth-child(even) 可以设置单数双数
+        */
+         ol li p:only-child{
+            color: red;
+        } 
+        /*ol li:nth-last-child(3){
+            font-size: 30px;
+        }*/
+        /* 
+        ol li:first-of-type{
+            font-size: 30px;
+        } 
+        
+        ol li:last-of-type{
+            font-size: 30px;
+
+        }
+        ol li:nth-of-type(2n){
+            font-size: 30px;
+            color: red;
+        }
+        li:nth-of-type(3) 可以直接选取索引值 
+        li:nth-of-type(3n) 设置倍数
+        li:nth-of-type(3n+1) 设置组且选择其中某个
+        li:nth-of-type(odd)
+        li:nth-of-type(even) 可以设置单数双数
+        
+        ol li p:only-of-type{
+            font-size: 30px;
+            color: red;
+        }
+        ol li:nth-last-of-type(3){
+            font-size: 30px;
+            color: red;
+        }*/
+        :root{
+            background: #ccc;
+        }
+        html{
+            background: #fff;
+        }
+        ol li:empty{
+            height: 100px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <p>ppppppppppp</p>
+        <li>吕布
+            <p>ppppppppppp</p>
+            <span>spanspanspa</span>
+        </li>
+        <li>赵云
+            <p>ppppppppppp</p>
+            <p>ppppppppppp</p>
+            <p>ppppppppppp</p>
+        </li>
+        <li>典韦
+            <p>ppppppppppp</p>
+            <p>ppppppppppp</p>
+            <p>ppppppppppp</p>
+        </li>
+        <li>关羽</li>
+        <li></li>
+        <li>张飞</li>
+        <li>黄忠</li>
+        <li>马超</li>
+        <li>姜维</li>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+</ol>
+</body>
+</html>

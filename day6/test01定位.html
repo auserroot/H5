@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 定位 元素垂直居中</title>
+    <style>
+        /* html{
+            position: absolute;
+            top: auto;
+            left: auto;
+        } */
+        .top{
+            width: 500px;
+            height: 500px;
+            background: #666;
+            /* position: relative; */
+            /* position: absolute; */
+            position: fixed;
+            top :24.5%;
+            left: 36.9%;
+        }
+        .top div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            top:40%;
+            left: 40%;
+            /* top: 200px;
+            left: 200px; */
+        }
+        .center{
+            width: 100%;
+            height: 50px;
+            background-color: cornflowerblue;
+            position: sticky;
+            top: 0;
+            left: auto;
+        }
+        .bottom{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            position: fixed;
+            top: 36.5%;
+            left: 44.8%;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div></div>
+    </div>
+    <div class="center"></div>
+    <div class="bottom"></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 386px;
+            height: 736px;
+            margin: 0 auto;
+            background: #9CBC2B;
+            border-radius: 8px;
+            padding: 10px 18px 30px;  
+        }
+        .box div p{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .box div span{
+            display: block;
+            width: 386px;
+            height: 40px;
+            line-height: 40px;
+            margin: 4px 0;
+            border: 2px solid #E3ECC2;
+            border-radius: 5px;
+            background-color:#BAD06B ;
+        }
+        .box div span input{
+            margin-left: 80px;     
+        }
+        .box .form_box1 .e_input{
+            margin-left: 85px;
+        }
+        .box div .span01{
+            height: 114px;
+            overflow: hidden;
+        }
+        .box div .span01 i{
+            font-style: normal;
+            float: left;
+            margin-right: 50px;
+        }
+        .box div .span01 textarea{
+            float: left;
+            margin: 8px 10px;
+        }
+        .box div .span02{
+            height: 62px;
+            line-height: 20px;
+        }
+
+        .box div .span02 input{
+            margin: 16px 30px 8px 16px;
+        }
+        .box .form_box2 .post_input{
+            margin-left: 48px;
+        } 
+        .box .form_box2 .con_input{
+            margin-left: 64px;
+        }
+        .box .form_box3 .ca_input{
+            margin-left: 24px;
+        }
+        .box .form_box3 .cs_input{
+            margin-left: 24px;
+        }
+        .box .form_box3 .na_input{
+            margin-left: 18px;
+        }
+        .but{
+            display: block;
+            width:116px ;
+            height: 32px;
+            border-radius: 16px;
+            border: none;
+            color: #fff;
+            background:#374313 ;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <div class="form_box1">
+            <p>Step 1: Your details</p>
+            <span>
+            Name<input type="text" name="user_name" placeholder="First and last name">
+            </span>
+            <span>
+            Email<input type="email" name="user_email" placeholder="example@domain.com" class="e_input">
+            </span>
+            <span>
+            Phone<input type="number" name="phone_num" placeholder="Eg +447500000000">
+            </span>
+        </div>
+        <div class="form_box2">
+            <p>Step 2: Delivery address</p>
+            <span class="span01">
+            <i>Address</i>
+            <textarea name="Address" id="" cols="24" rows="6"></textarea>
+            </span>
+            <span>
+            Post code<input type="number" name="post_code" class="post_input">
+            </span>
+            <span>
+            Country<input type="text" name="Country" class="con_input">
+            </span>
+        </div>
+        <div class="form_box3">
+            <p>Step 3: Card details</p>
+            <span class="span02">
+            Card type<br>
+            <input type="radio" value="VISA">VISA <input type="radio" value="AmEx">AmEx<input type="radio" value="Mastercard">Mastercard
+            </span>
+            <span>
+            Card number<input type="number" name="card_num" class="ca_input">
+            </span>
+            <span>
+             Security code<input type="number" name="security_num" class="cs_input">
+            </span>
+            <span>
+            Name on card<input type="text" name="card_name" placeholder="Exact name as on the card" class="na_input">
+            </span>
+        </div>
+        <input type="submit" value="BUY IT!" class="but">
+        </form>
+    </div>
+</body>
+</html>

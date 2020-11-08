@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background:#d35;
+        }
+        p{
+            background: #345;
+            width: 200px;
+            height: 200px;
+        }
+        a{
+            padding: 20px;
+            margin:20px;
+            background: #785;
+            /* display: block;  将内联元素转换为块元素 */
+            display: inline-block;/*将内联元素转换为行内块元素*/
+            height: 200px;
+            width: 200px;
+        }
+        span{
+            padding: 20px;
+            margin:20px;
+            background: #785;
+            /* display: block;  将内联元素转换为块元素 */
+            display: inline-block;/*将内联元素转换为行内块元素*/
+            height: 200px;
+            width: 200px;
+        }
+        strong{
+            padding: 20px;
+            margin:20px;
+            background: #785;
+            /* display: block;  将内联元素转换为块元素 */
+            display: inline-block;/*将内联元素转换为行内块元素*/
+            height: 200px;
+            width: 200px;
+        }
+        /* 转换元素前内联元素设置的padding,margin的上下值浏览器无法正确处理，会与上一个元素重叠 */
+        /*转换为行内块元素能使元素显示在同一行内*/
+    </style>
+</head>
+<body>
+    <!-- 块元素 -->
+    <div>test 块元素 div</div>
+    <p>test 块元素 p</p>
+    <!-- 内联元素 -->
+    <a href="#">test 内联元素 a</a>
+    <span>test 内联元素 span</span>
+    <strong>test 内联元素 strong</strong>
+    <!-- 行内块元素 -->
+    <img src="../day1/day01/img/img2.jpg" alt="">
+    <input type="text">
+</body>
+</html>

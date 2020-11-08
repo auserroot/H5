@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+         controls属性：如果出现该属性，则向用户显示控件，比如播放按钮
+         controls属性：如果出现该属性，则向用户显示控件，比如播放按钮。
+         autoplay属性：如果出现该属性，则视频在就绪后马上播放。
+         loop属性：重复播放属性。
+         muted属性：静音属性。
+        poster属性：规定视频正在下载时显示的图像，直到用户点击播放按钮。
+     -->
+    <video src="video/movie.ogg" controls autoplay loop></video>
+    <video controls autoplay loop>
+        <source src="video/movie.ogg" type="video/ogg">
+        <source src="video/movie.webm" type="video/webm">
+        <source src="video/movie.mp4" type="video/mp4">
+    </video>
+    <audio src="audio/我的好兄弟.mp3" controls autoplay loop></audio>
+</body>
+</html>

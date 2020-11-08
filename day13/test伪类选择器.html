@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择其父元素的首个子元素 */
+        /* ul :first-child{
+            font-size: 30px;
+            color: red;
+        } */
+        /* 选择其父元素的最后一个子元素 */
+        /* ul :last-child{
+            color: chartreuse;
+        } */
+        /* 用于匹配索引值为1的子元素 */
+        /* ul li:nth-child(1){
+            color: cyan;
+        } */
+        /* 用于匹配索引值为2的子元素及其倍数的子元素 */
+        /* ul li:nth-child(2n){
+            color: blue;
+        } */
+        /* 用于匹配索引2个子元素为一组的第一个子元素 */
+        /* ul li:nth-child(2n+1){
+            color: gold;
+        } */
+        /* 用于匹配索引2个子元素为一组的第2个子元素。 */
+        /* ul li:nth-child(2n+2){
+            color: indigo;
+        } */
+        /* 匹配的是li下的有且仅有一个的p */
+        /* ul li p:only-child{
+            color: rgb(110, 211, 15);
+        } */
+        /* 从最后一个开始算索引 用法同X:nth-child(n)*/
+        /* ul li:nth-last-child(1){
+            color: rgb(236, 15, 89);
+        } */
+        /* 匹配同级兄弟元素中的第一个X元素 */
+        /* ul li:first-of-type{
+            color: maroon;
+        } */
+        /* 匹配同级兄弟元素中的最后一个X元素 */
+        /* ul li:last-of-type{
+            color: orangered;
+        } */
+        /* 匹配同类型中的第n个同级兄弟元素X 用法同X:nth-child(n)*/
+        /* ul li:nth-of-type(1){
+            color: orchid;
+        } */
+        /* X:nth-last-of-type(n) 匹配同类型中的倒数第n个同级兄弟元素。用法同X:nth-child(n) */
+        /* 匹配文档的根元素 在HTML（标准通用标记语言下的一个应用）中，根元素永远是HTML*/
+        :root{
+            color: palevioletred;
+        }
+        /* 匹配没有任何子元素（包括包含文本）的元素 */
+        ul li:empty{
+            height: 100px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <p>00000</p>
+        <li>
+            1111
+            <p>1</p>
+        </li>
+        <li>
+            2222
+            <p>2</p>
+            <p>2</p>
+        </li>
+        <li>
+            3333
+            <p>3</p>
+            <p>3</p>
+            <p>3</p>
+        </li>
+        <li>4444</li>
+        <li>5555</li>
+        <li>6666</li>
+        <li></li>
+    </ul>
+</body>
+</html>

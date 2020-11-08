@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 匹配所有用户界面（form表单）中处于可用状态的元素 */
+        /* 
+        input:enabled{
+            background: pink;
+        }
+        /* 匹配所有用户界面（form表单）中处于不可用状态的元素 */
+        /*input:disabled{
+            background: #999;
+        } 
+        */
+        /* 匹配所有用户界面（form表单）中处于选中状态的元素 */
+        input:checked{
+            width: 50px;
+            height: 50px;
+        }
+        /* 元素中被用户选中或处于高亮状态的部分 */
+        ::selection{
+            background: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text"><br>
+        <input type="search"><br>
+        <input type="password" disabled><br>
+        <input type="url" disabled><br>
+        <input type="number"><br>
+        <input type="radio"><br>
+        <input type="radio"><br>
+        <input type="radio"><br>
+        <input type="checkbox"><br>
+        <input type="checkbox"><br>
+        <input type="checkbox"><br>
+    </form>
+    埃里克森大姐爱丽丝的空间啊实力坑爹记录卡三等奖
+</body>
+</html>

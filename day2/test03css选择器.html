@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        /* 通配符选择器 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 标签选择器 */
+        p{
+            color: orangered;
+        }
+        /* id选择器 */
+        #black{
+            color: black;
+        }
+        /* class选择器 */
+        .red{
+            color: red;
+        }
+        /* 群组选择器 */
+        p,#black,.red{
+            font-size: 30px;
+        }
+        /* 包含选择器 */
+        ol li{
+            color: seagreen;
+        }
+        .red li{
+            font-weight: 500;
+        }
+        /* 动态伪类选择器 */
+        a{
+            color: springgreen;
+        }
+        a:hover{
+            color: tomato;
+        }
+        div:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>p test</p>
+    <p id="black">p test</p>
+    <ul class="red">
+        <li>ul test</li>
+        <li>ul test</li>
+        <li>ul test</li>
+    </ul>
+    <ol>
+        <li>ol test</li>
+        <li>ol test</li>
+        <li>ol test</li>
+    </ol>
+    <div>div test</div>
+    <a href="#">a test</a>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 880px;
+            height: 550px;
+            border: 2px solid #fff;
+            margin: 0 auto;
+            background: #888888;
+        }
+        .header{
+            width: 880px;
+            height: 64px;
+            background:#F47D31;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 64px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .header span{
+            font-size: 30px;
+        }
+
+        .footer{
+            width: 880px;
+            height: 64px;
+            background:#F47D31;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 64px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .footer span{
+            font-size: 30px;
+        }
+        .section1{
+            display: block;
+            width: 880px;
+            height: 398px;
+            overflow: hidden;
+            
+            margin-bottom: 18px;
+        }
+        nav{
+            height: 400px;
+            float: left;
+            font-size:14px ;
+            color: #fff;
+            background: #888888;
+            margin:0 8px;
+        }
+        nav p{
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        nav a{
+            display: block;
+            width: 190px;
+            height: 50px;
+            line-height: 30px;
+            text-decoration: none;
+            color: #E97D3E;
+            font-size:10px ;
+            border-bottom: 2px solid #fff;
+        }
+        .section_box{
+            float: left;
+            width:412px ;
+            padding: 8px 8px;
+        }
+        .article1{
+            width:410px ;
+            height: 200px;
+            padding: 8px 8px;
+            background: #fff;
+        }
+
+        .article1 header{
+            width: 410px;
+            height:24px;
+            background:#F47D31;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 16px;
+            margin: 0 auto;
+        }
+       .section2{
+           margin: 8px;
+           margin-bottom: 16px;
+           line-height: 20px;
+           font-size: 14px;
+       }
+        .article1 footer{
+            width: 410px;
+            height:24px;
+            background:#F47D31;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 16px;
+            margin: 0 auto;
+        }
+
+        .article2{
+            width: 410px;
+            height: 150px;
+            padding: 8px 8px;
+            background: #fff;
+            margin-top: 16px;
+        }
+        .article2 header{
+            width: 410px;
+            height:24px;
+            background:#F47D31;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 16px;
+            margin: 0 auto;
+        }
+        .article2 footer{
+            width: 410px;
+            height:24px;
+            background:#F47D31;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 16px;
+            margin: 0 auto;
+        }
+        .section3{
+           margin: 16px 8px;
+           line-height: 20px;
+           font-size: 14px;
+       }
+        aside{
+            width: 180px;
+            color: #fff;
+            font-size:14px ;
+            font-style: italic;
+            float: left;
+            padding:0 20px;
+            margin-left: 18px;
+        }
+        aside p{
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-style: normal;
+        }
+        aside span{
+            display: inline-block;
+            font-size: 16px;  
+            font-weight: bold;
+            color: #000;
+            background:#FFFF00 ;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <section class="box">
+    <header class="header"><span>H</span>eader</header>
+    <section class="section1">
+    <nav>
+        <p>nav</p>
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+    </nav>
+    <section class="section_box">
+    <article class="article1">
+        <header>
+            Article Header
+        </header>
+        <section class="section2">
+            Lorem ipsum dolor HTML5 nunc aut nunquam sit amet,
+            consectetur adipiscing elit. Vivamus at est eros, vel fringillaurna.
+            <br><br>Per inceptos himenaeos. Quisque feugiat, justo at vehicula
+            pellentesque, turpis lorem dictum nunc.
+        </section>
+        <footer>
+            Article Footer
+        </footer>
+    </article>
+    <article class="article2">
+        <header>
+            Article Header
+        </header>
+        <section class="section3">
+            HTML5: "Lorem ipsum dolor nunc aut nunquam sit amet,
+            consectetur adipiscing elit. Vivamus at est eros, vel fringilla
+            urna. Pellentesque odio
+        </section>
+        <footer>
+            Article Footer
+        </footer>
+    </article>
+</section>
+    <aside>
+        <p>Aside</p>
+       <span>HTML5:</span> "Lorem ipsum
+        dolor nunc aut nunquam
+        sit amet, consectetur
+        adipiscing elit. Vivamus
+        at est eros,vel fringila
+        arma.Pelentesque odio
+        rhoncus
+    </aside>
+</section>
+    <footer class="footer"><span>F</span>ooter</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*宽度自适应1:块元素不设置宽度时，默认通栏*/
+        .box1{
+            background-color: coral;
+            height: 100px;
+        }
+        /*宽度自适应3:当元素脱离文档流时候，如未设置宽度则会根据内容的总宽度来呈现*/
+        .box2{
+            float: left;
+            background-color: crimson;
+            height: 100px;
+            width: 10%;
+        }
+        /*宽度自适应3:百分比宽度，参照于父元素尺寸*/
+        .box3{
+            width: 50%;
+            height: 100px;
+            background-color: cyan;
+        }
+        /*宽度自适应4:当元素使用脱离文档流的定位时，未设置宽度同时给left和right设置数值浏览器会自动处理元素宽度*/
+        .box4{
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

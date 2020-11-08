@@ -1,0 +1,96 @@
+/* 在此文件中写对应此页面的样式 */
+#banner{
+    height: 396px;
+    min-width: 1170px;
+    background: url(../images/banner1.jpg) no-repeat center top;
+    background-size: 100% 100%;
+    /* background-size 调节背景图尺寸 */
+    text-align: center;
+    /* overflow: hidden; 子元素margin-top错误加载父元素上的BUG解决方法1 */
+    border: 1px solid #616a72;
+    /*加边框 子元素margin-top错误加载父元素上的BUG解决方法2 */
+}
+#banner strong{
+    display: block;
+    font-size: 38px;
+    color: #fff;
+    line-height: 136px;
+    margin-top: 56px;
+}
+#banner a{
+    display: block;
+    width: 186px;
+    height: 44px;
+    line-height: 44px;
+    background: #53cac3;
+    margin: 0 auto;
+    border-radius: 22px;
+    font-size: 20px;
+    color: #fff;
+}
+/* 主题内容 */
+.news{
+    height: 436px;
+    background: #fff;
+    margin-top: -68px;
+}
+.news ul li{
+    float: left;
+    width: 282px;
+    padding: 44px 54px 0;
+    
+}
+.news ul li h2{
+    color: #333;
+    font-size: 16px;
+    text-indent: 12px;
+    position: relative;
+    line-height: 20px;
+}
+.news ul li h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2.5px;
+    width: 3px;
+    height: 15px;
+    background: #53cac3;
+}
+
+
+.news ul li h2 a{
+    float: right;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    text-align: center;
+    text-indent: 0;
+}
+.news ul li img{
+    margin-top: 42px;
+    margin-bottom: 32px;
+}
+.news ul li strong{
+    font-size: 20px;
+    color: #000;
+    line-height: 32px;
+    display: block;
+}
+.news ul li a{
+    color: #999;
+    line-height: 44px;
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 44px;
+    height: 344px;
+    width: 1px;
+    background: #ededed;
+}

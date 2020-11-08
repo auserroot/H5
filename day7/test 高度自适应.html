@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*高度自适应1:当元素不设置高度时默认会根据内容显示高度height:auto*/
+        .box1{
+            background-color: darkorange;
+            /* width: 100%; */
+        }
+        /*高度自适应2:百分比高度，根据父元素尺寸进行参考*/
+        html,body{
+            height: 100%;
+        }
+        .box2{
+            /* width: 100%; */
+            height: 10%;
+            background-color: darkred;
+        }
+        /*高度自适应3:使用脱离文档流的定位，在没有设置高度的情况下，同时设置top和bottom的数值，则浏览器会自动呈现中间区域
+        .box3{
+            width: 10%;
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">test 高度自适应</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

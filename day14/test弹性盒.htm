@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 360px;
+            border: 1px solid #000;
+            display:flex ;
+            flex-direction: row;
+            /* flex-direction: row-reverse;横向排列反序 */
+            /* flex-direction: column;纵向排列 */
+            /* flex-direction: column-reverse;纵向排列反序 */
+            /* 把弹性项沿着弹性容器的主轴线（main axis）对齐 */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+            /* align-items 设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式 */
+            /* align-items: center; */
+            /* align-items: baseline; */
+            align-items: flex-start;
+        }
+        li{
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            background-color: chartreuse;
+            border: 1px solid red;
+        }
+        li:nth-child(2){height: 60px;}
+        li:nth-child(3){height: 70px;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>

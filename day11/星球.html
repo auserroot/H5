@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background: url(../day11/img/xk.jpg) no-repeat center;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .circle1{
+            width: 800px;
+            height: 800px;
+            border: 1px solid white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 60px wheat;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            /* transform-style: preserve-3d ; */
+            transform: rotateX(76deg) rotateY(160deg);
+            animation: star1 5s infinite linear;
+        }
+
+        .circle2{
+            width: 600px;
+            height: 600px;
+            border: 1px solid white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 60px wheat;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform-style: preserve-3d ;
+        }
+
+        .circle3{
+            width: 400px;
+            height: 400px;
+            border: 1px solid white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 60px wheat;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform-style: preserve-3d ;
+        }
+        .sun{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform-style: preserve-3d ;
+            transform: rotateX(10deg) rotateY(30deg) rotateZ(60deg);
+        }
+        .sun li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            border: 1px solid gold;
+            border-radius: 50%;
+            box-shadow:5px 2px 30px yellow ;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .line1{
+            transform: rotateY(36deg);
+        }
+        .line2{
+            transform: rotateY(72deg);
+        }
+        .line3{
+            transform: rotateY(108deg);
+        }
+        .line4{
+            transform: rotateY(144deg);
+        }
+        .line5{
+            transform: rotateY(180deg);
+        }
+        .line6{
+            transform: rotateY(216deg);
+        }
+        .line7{
+            transform: rotateY(252deg);
+        }
+        .line8{
+            transform: rotateY(288deg);
+        }
+        .line9{
+            transform: rotateY(324deg);
+        }
+        .line10{
+            transform: rotateY(360deg);
+        }
+
+
+
+
+        .star1{
+            width:100px;
+            height: 100px;
+            position: absolute;
+            top: 320px;
+            left: -40px;
+            margin: auto;
+            transform-style: preserve-3d ;  
+            transform: rotateX(10deg) rotateY(30deg) rotateZ(60deg);
+        }
+        .star1 li{
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            border-radius: 50%;
+            box-shadow:5px 2px 30px blueviolet ;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+
+        .star2{
+            width:60px;
+            height: 60px;
+            position: absolute;
+            top: -30px;
+            left: 280px;
+            margin: auto;
+            transform-style: preserve-3d ;  
+            transform: rotateX(10deg) rotateY(30deg) rotateZ(60deg);
+        }
+        .star2 li{
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            border: 1px solid yellowgreen;
+            border-radius: 50%;
+            box-shadow:5px 2px 30px rgb(194, 194, 25) ;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        .star3{
+            width:30px;
+            height: 30px;
+            position: absolute;
+            top: 210px;
+            left: 385px;
+            margin: auto;
+            transform-style: preserve-3d ;  
+            transform: rotateX(10deg) rotateY(30deg) rotateZ(60deg);
+        }
+        .star3 li{
+            list-style: none;
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgb(231, 72, 210);
+            border-radius: 50%;
+            box-shadow:5px 2px 30px rgb(139, 53, 53) ;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @keyframes star1{
+            0%{
+                transform:rotateZ(0deg);
+            }
+            100%{
+                transform:rotateZ(360deg) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle1">
+         
+        <ul class="star1">
+            <li class="line1"></li>
+            <li class="line2"></li>
+            <li class="line3"></li>
+            <li class="line4"></li>
+            <li class="line5"></li>
+            <li class="line6"></li>
+            <li class="line7"></li>
+            <li class="line8"></li>
+            <li class="line9"></li>
+            <li class="line10"></li>
+        </ul>
+
+        <div class="circle2">
+            <ul class="star2">
+                <li class="line1"></li>
+                <li class="line2"></li>
+                <li class="line3"></li>
+                <li class="line4"></li>
+                <li class="line5"></li>
+                <li class="line6"></li>
+                <li class="line7"></li>
+                <li class="line8"></li>
+                <li class="line9"></li>
+                <li class="line10"></li>
+            </ul>
+            <div class="circle3">
+                <ul class="sun">
+                    <li class="line1"></li>
+                    <li class="line2"></li>
+                    <li class="line3"></li>
+                    <li class="line4"></li>
+                    <li class="line5"></li>
+                    <li class="line6"></li>
+                    <li class="line7"></li>
+                    <li class="line8"></li>
+                    <li class="line9"></li>
+                    <li class="line10"></li>
+                </ul>
+                <ul class="star3">
+                    <li class="line1"></li>
+                    <li class="line2"></li>
+                    <li class="line3"></li>
+                    <li class="line4"></li>
+                    <li class="line5"></li>
+                    <li class="line6"></li>
+                    <li class="line7"></li>
+                    <li class="line8"></li>
+                    <li class="line9"></li>
+                    <li class="line10"></li>
+                </ul>
+            </div>
+        </div>
+    </div>              
+</body>
+</html>
