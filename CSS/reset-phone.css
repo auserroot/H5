@@ -3,9 +3,18 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
     margin:0;
     padding:0;
 }
-/* 设置全局默认字号和字体 */
-body,html{
+/*设置默认单位为100px（设备屏宽：320px）*/
+/*1vw=设备宽度的1%*/
+html{
+    font-size: 31.25vw;
+}
+/* 设置全局默认字号和字体 （pc端）*/
+/* html,body{
     font: 14px "微软雅黑",Arial;
+} */
+/* 设置移动端默认字号，字体(用rem单位换算px实现兼容不同屏宽设备) */
+body{
+    font: 0.14rem "微软雅黑",Arial;
 }
 /* 取消默认加粗样式 */
 h1,h2,h3,h4,h5,h6,b,strong{

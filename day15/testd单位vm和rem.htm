@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* calc() 函数 */
+        /*宽100%下设置padding会导致出现横向滑动条*/
+        /* 可利calc（）函数进行调整 */
+        /* div{
+            width: 100%;
+            height: 200px;
+            padding: 50px;
+            background:red;
+        } */
+        /* div{
+            width: calc(100% - 100px);
+            height: 200px;
+            padding: 50px;
+            background: darkblue;
+        } */
+
+        /* div{
+            width: 10rem;未定义html字体大小按默认16px计算
+            height: 10rem;
+            background: red;
+        }*/
+        /*p{
+            width: 4rem;
+            color: aqua;
+            background-color: burlywood;
+        } */
+       /*1vm=设备宽度1%*/
+       *{
+           padding: 0;
+           margin: 0;
+       }
+       html{
+           font-size:31.25vw;
+        }/*设备宽度为320px取字体为100px */
+       body{
+           font-size: .16px;
+       }
+       div{
+           width: 1.6rem;
+           height: 1.6rem;
+           background: chocolate;
+        }/*定义html字体为100px */
+       p{
+           width: 1rem;
+           background: crimson;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        test
+        <p>test</p>
+    </div>
+</body>
+</html>
