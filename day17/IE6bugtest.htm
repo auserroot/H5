@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bug</title>
+    <style>
+        /* 解决方法 */
+        /* 1.图片有边框BUG(border: 0/none;) */
+        /*img{
+            border: 0;
+            *border: none;*
+        }*/
+        /* 2.图片间隙 (vertical-align: middle;*/
+        /* div{
+            background: #666;
+        }
+        div>img{
+            vertical-align: middle;
+        } */
+        /* 3.双倍浮向（双倍边距）（只有IE6出现）(display: inline;) */
+        /* div{
+            width: 200px;
+            height: 200px;
+            background: #666;
+            margin: 50px;
+            float: left;
+            display: inline;
+        } */
+        /* 4)、默认高度（IE6、IE7）(overflow: hidden;/font-siz:0;) */
+        /* div{
+            height: 5px;
+            background: magenta;
+            overflow: hidden;
+        } */
+        /* 5)、表单元素行高对齐不一致 (加浮动*/
+        /* input[type="text"]{height: 34px;}
+        input[type="submit"]{height: 40px;}
+        form>input{
+            float: left;
+        } */
+        /* 6)、百分比bug (clear: right;*/
+        /* .box1{
+            width: 50%;
+            height: 200px;
+            background: midnightblue;
+            float: left;
+        }
+        .box2{
+            width: 50%;
+            height: 200px;
+            background: rgb(223, 12, 12);
+            float: right;
+            clear: right;
+        } */
+        /* 7)、透明属性 (：filter:alpha(opacity=value);取值范围 1-100(整数)*/
+        /* div{
+            width: 200px;
+            height: 200px;
+            background: rgb(197, 106, 41);
+            opacity: .5;
+            filter:alpha(opacity=50);
+        } */
+        /* 8)、li列表的BUG 
+        1）：当父元素(li) 有float:left;子元素(a) 没设置浮动的情况下会出现垂直bug；             
+
+             Hack:给父元素li和子元素a都设置浮动；
+
+        2）：当给li中的a转成block；并且有height,并有float的，li中没设置浮动会出现阶梯显示，              
+
+             hack：同时给li加float;
+        */
+        /* li{
+            list-style: none;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            background: tomato;
+            float: left;
+        }
+        li>a{
+            display: block;
+        } */
+        /* 9)、当前元素(父元素里面第一个子元素)与父元素没有设置任何浮动的情况下，设置margin-top后，会错误的把margin-top加在父级元素上 
+        hack:1、给父级元素添加overflow:hidden;(推荐使用)   
+
+        hack：2、给父元素或者子元素加浮动
+        
+        hack：3、给父元素加边框
+        */
+        /* div{
+            width: 200px;
+            height: 200px;
+            background: tomato;
+            overflow: hidden;
+        }
+      .box{
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            border: 1px solid #000;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 1)、图片有边框BUG -->
+    <!-- <a href="#"><img src="img/01index_default_06.jpg" alt=""></a> -->
+    <!-- 2)、图片间隙 -->
+    <!-- <div><img src="img/01index_default_06.jpg" alt=""></div> -->
+    <!--3)、 双倍浮向（双倍边距）（只有IE6出现） -->
+    <!-- <div></div>
+    <div></div>
+    <div></div> -->
+    <!-- 4)、默认高度（IE6、IE7） -->
+    <!-- <div></div> -->
+    <!-- 5)、表单元素行高对齐不一致 -->
+    <!-- <form action=""><input type="text"><input type="submit"></form> -->
+    <!-- 6)、百分比bug  -->
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+    <!-- 7)、透明属性 -->
+    <!-- <div></div> -->
+    <!-- 8)、li列表的BUG -->
+    <!-- <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul> -->
+    <!-- 9)、当前元素(父元素里面第一个子元素)与父元素没有设置任何浮动的情况下，设置margin-top后，会错误的把margin-top加在父级元素上 -->
+    <!-- <div>
+        <div class="box"></div>
+    </div> -->
+</body>
+</html>
