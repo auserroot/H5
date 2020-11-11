@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body,html{
+        height: 100%;
+        background: #333;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    div{
+        margin: 20px 20px;
+    }
+    div:nth-child(1){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(1)>i{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a5;
+        place-self: center center;
+    }
+    div:nth-child(2){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(2) i:nth-child(1){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a2;
+        place-self: end center;
+    }
+    div:nth-child(2) i:nth-child(2){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a8;
+        place-self: start center;
+    }
+    div:nth-child(3){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(3) i:nth-child(1){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a1;
+        place-self: center center;
+    }
+    div:nth-child(3) i:nth-child(2){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a5;
+        place-self: center center;
+    }
+    div:nth-child(3) i:nth-child(3){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a9;
+        place-self: center center;
+    }
+    div:nth-child(4){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(4) i:nth-child(1){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a1;
+        place-self: end end;
+    }
+    div:nth-child(4) i:nth-child(2){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a3;
+        place-self: end start;
+    }
+    div:nth-child(4) i:nth-child(3){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a7;
+        place-self: start end;
+    }
+    div:nth-child(4) i:nth-child(4){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a9;
+        place-self: start start;
+    }
+    div:nth-child(5){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(5) i:nth-child(1){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a1;
+        place-self: center center;
+    }
+    div:nth-child(5) i:nth-child(2){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a3;
+        place-self: center center;
+    }
+    div:nth-child(5) i:nth-child(3){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a7;
+        place-self: center center;
+    }
+    div:nth-child(5) i:nth-child(4){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a9;
+        place-self: center center;
+    }
+    div:nth-child(5) i:nth-child(5){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a5;
+        place-self: center center;
+    }
+    div:nth-child(6){
+        width: 124px;
+        height: 124px;
+        background: #ccc;
+        border-radius: 8px;
+        display: grid;
+        grid-template: "a1 a2 a3" 1fr "a4 a5 a6" 1fr "a7 a8 a9" 1fr /1fr 1fr 1fr;
+    }
+    div:nth-child(6) i:nth-child(1){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a1;
+        place-self: center end;
+    }
+    div:nth-child(6) i:nth-child(2){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a3;
+        place-self: center start;
+    }
+    div:nth-child(6) i:nth-child(3){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a4;
+        place-self: center end;
+    }
+    div:nth-child(6) i:nth-child(4){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a6;
+        place-self: center start;
+    }
+    div:nth-child(6) i:nth-child(5){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a7;
+        place-self: center end;
+    }
+    div:nth-child(6) i:nth-child(6){
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #111;
+        grid-area: a9;
+        place-self: center start;
+    }
+</style>
+<body>
+    <div>
+        <i></i>
+    </div>
+    <div>
+        <i></i>
+        <i></i>
+    </div>
+    <div>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <div>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <div>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <div>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</body>
+</html>

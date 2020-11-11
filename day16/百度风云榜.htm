@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 306px;
+        height: 416px;
+        padding: 0 14px;
+        box-sizing: border-box;
+        border: 1px solid #dedee3;
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .box .pic{
+        width: 278px;
+        height: 250px;
+        display: grid;
+        grid-template: "a1 a2 a2" 1fr "a3 a2 a2" 1fr "a4 a4 a5" 1fr "a6 a7 a7" 1fr /1fr 1fr 1fr;
+    }
+    .box .pic div:nth-child(1){
+        background: -webkit-linear-gradient(top,#157de7,#31acf4);
+        grid-area: a1;
+    }
+    .box .pic div:nth-child(2){
+        background: -webkit-linear-gradient(top,#157de7,#31acf4);
+        grid-area: a2;
+    }
+    .box .pic div:nth-child(3){
+        background: -webkit-linear-gradient(top,#f2256d,#ff5aac);
+        grid-area: a3;
+    }
+    .box .pic div:nth-child(4){
+        background: -webkit-linear-gradient(top,#157de7,#31acf4);
+        grid-area: a4;
+    }
+    .box .pic div:nth-child(5){
+        background: -webkit-linear-gradient(top,#157de7,#31acf4);
+        grid-area: a5;
+    }
+    .box .pic div:nth-child(6){
+        background: -webkit-linear-gradient(top,#ce6700,#e8ab1d);
+        grid-area: a6;
+    }
+    .box .pic div:nth-child(7){
+        background: -webkit-linear-gradient(top,#ce6700,#e8ab1d);
+        grid-area: a7;
+    }
+    a{
+        text-decoration: none;
+    }
+    .box .pic div{
+        display: grid;
+        margin: 4px 6px;
+    }
+    .box .pic div a:nth-child(1){
+        display: block;
+        font-size: 12px;
+        color: #fff;
+        justify-self: end;
+    }
+    .box .pic div a:nth-child(2){
+        display: block;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav a{
+        text-decoration: none;
+        width: 16px;
+        height: 20px;
+        font-size: 12px;
+        color: #3558ae;
+        border: 1px solid #fbfbfb;
+    }
+    nav a:hover{
+        color: #685e54;
+        border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>今日上榜</h2>
+        <div class="pic">
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+            <div>
+                <a href="#">
+                    七日头条
+                </a>
+                <a href="#">高通技术授权</a>
+            </div>
+        </div>
+        <nav>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            display: grid;
+            /* 划分格子 */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-rows:33.3% 33.3% 33.3%; */
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr); */
+            /* grid-template-areas: "1 2 3" "4 5 6" "7 8 9"; */
+            /* 复合写法 */
+            grid-template: "a1 a2 a3" 80px "a4 a5 a6" 80px "a7 a8 a9" 80px / 80px 80px 80px;
+            /* justify-content: stretch;水平拉伸子元素 */
+            /* justify-content: start;网格水平居左*/
+            /* justify-content: end;网格水平居右 */
+            /* justify-content: center;网格水平居中 */
+            /* justify-content: space-around; */
+            /*justify-content: space-between; 表现为两端对齐。 */
+            /* justify-content: space-evenly;平均分配空白空间 */
+            /* 复合写法 */
+            /* place-content: center end; 垂直居中，水平居右*/
+        }
+        span{
+            width: 30px;
+            height: 30px;
+            background-color: blueviolet;
+            /* grid-column-start: 2;
+            grid-column-end: 3; 垂直方向第二条线(竖线)开始，第三条线结束位置 */
+            /* grid-row-start: 2;
+            grid-row-end: 3;水平方向第二条线(横线)开始，第三条线结束位置 */
+            /* 复合 */
+            /* grid-column: 2/3;
+            grid-row: 2/3; */
+            /* grid-area: 2/2/3/3;(start/start/end/end) */
+             grid-area: a5;/*调用父级grid-template定义的区域 */
+             /*justify-self: center;在当前格子内水平居中*/
+             /* justify-self: start;在当前格子内水平居左 */
+             /* justify-self: end;在当前格子内水平居右 */
+             /* align-self: center;在当前格子内垂直居中 */
+             /* align-self: start;在当前格子内垂直居左 */
+             /* align-self: end;在当前格子内垂直居右 */
+             /* 复合 */
+             place-self: center end;/*垂直居中，水平居右*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+</html>
